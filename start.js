@@ -71,9 +71,8 @@ async.series([ // предотвращаем асинхронность
         if (task !== '*') 
             console.log('задача', task, 'операция', operation, '-', tasks[task][operation]());
         else{
-			for(var key in tasks){ // пробегаемся по массиву задач и выполняем их
+			for(var key in tasks) // пробегаемся по массиву задач и выполняем их
 				console.log('задача', key, 'операция', operation, '-', tasks[key][operation]());
-			}
         }
         
         console.log('Завершено. Для вступления изменений в силу перезапустите компьютер');
