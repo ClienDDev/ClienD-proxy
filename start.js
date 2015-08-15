@@ -65,10 +65,10 @@ async.series([ // предотвращаем асинхронность
                 task = argv._[1];
         }
         else
-            task = 'write';
-        
-        if (task === '*') 
-            task[operation]();
+            operation = 'write';
+            
+        if (task !== '*') 
+            tasks[task][operation]();
         else{
 			for(var key in tasks) // пробегаемся по массиву задач и выполняем их
 				tasks[key][operation]();
