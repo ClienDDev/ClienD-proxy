@@ -1,0 +1,25 @@
+{
+  "name": "cliend_proxy",
+  "version": "1.0.0",
+  "description": "ClienD proxy - Wireless@School proxy setup script for linux",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atnartur/cliend-proxy.git"
+  },
+  "keywords": [
+    "edu.tatar.ru",
+    "cliend",
+    "wireless@school",
+    "tatarstan"
+  ],
+  "author": "ClienDDev team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atnartur/cliend-proxy/issues"
+  },
+  "homepage": "https://github.com/atnartur/cliend-proxy#readme"
+}
