@@ -7,6 +7,7 @@ var async = require('async');
 // задачи
 var tasks = {
     bashrc: require('./tasks/bashrc'),
+    chrome: require('./tasks/chrome')
 }
 
 // загрузка конфигурации
