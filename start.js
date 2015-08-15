@@ -70,9 +70,8 @@ async.series([ // предотвращаем асинхронность
         if (task === '*') 
             task[operation]();
         else{
-            tasks.forEach(function(task){ // пробегаемся по массиву задач и выполняем их
-                task[operation]();
-            });
+			for(var key in tasks) // пробегаемся по массиву задач и выполняем их
+				tasks[key][operation]();
         }
     }
 ]);
