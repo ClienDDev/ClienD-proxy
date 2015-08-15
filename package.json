@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/atnartur/cliend-proxy/issues"
   },
-  "homepage": "https://github.com/atnartur/cliend-proxy#readme"
+  "homepage": "https://github.com/atnartur/cliend-proxy#readme",
+  "dependencies": {
+    "async": "^1.4.2",
+    "jsonlint": "^1.6.2",
+    "optimist": "^0.6.1",
+    "read": "^1.0.6"
+  }
 }

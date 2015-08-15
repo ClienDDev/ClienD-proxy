@@ -1,0 +1,5 @@
+{
+    "proxy_host": "proxy.school.tatar.ru",
+    "proxy_port": 8080,
+    "tasks": ["bashrc", "chrome", "apt"]
+}
