@@ -53,9 +53,9 @@ module.exports = {
             if(content.indexOf(this.label_str) !== -1){
 				var start = content.indexOf(this.label_str);
 				var end = content.indexOf(this.label_str, start + 1);
-				console.log(start, end + this.label_str.length);
+				
 				var old = "\n" + content.substring(start, end + this.label_str.length) + "\n";
-				//console.log(old);
+				
 				content = content.replace(old, this.get_code());
 				fs.writeFileSync(filepath, content);
 			}
@@ -65,6 +65,18 @@ module.exports = {
         }
     },
     remove: function(){
-        
+		var filepath = this.get_path();
+        var content = fs.readFileSync(filepath).toString();
+            
+		if(content.indexOf(this.label_str) !== -1){
+			var start = content.indexOf(this.label_str);
+			var end = content.indexOf(this.label_str, start + 1);
+			
+			var old = "\n" + content.substring(start, end + this.label_str.length) + "\n";
+			
+			content = content.replace(old, "");
+			fs.writeFileSync(filepath, content);
+		}
+		return true;
     }
 }
