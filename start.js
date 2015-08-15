@@ -68,7 +68,7 @@ async.series([ // предотвращаем асинхронность
             operation = 'write';
             
         if (task !== '*') 
-            console.log('задача', key, 'операция', operation, '-', tasks[task][operation]());
+            console.log('задача', task, 'операция', operation, '-', tasks[task][operation]());
         else{
 			for(var key in tasks){ // пробегаемся по массиву задач и выполняем их
 				console.log('задача', key, 'операция', operation, '-', tasks[key][operation]());

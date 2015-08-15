@@ -48,7 +48,19 @@ module.exports = {
                 }
             }
             
-            fs.appendFileSync(filepath, this.get_code());
+            var content = fs.readFileSync(filepath).toString();
+            
+            if(content.indexOf(this.label_str) !== -1){
+				var start = content.indexOf(this.label_str);
+				var end = content.indexOf(this.label_str, start + 1);
+				console.log(start, end + this.label_str.length);
+				var old = "\n" + content.substring(start, end + this.label_str.length) + "\n";
+				//console.log(old);
+				content = content.replace(old, this.get_code());
+				fs.writeFileSync(filepath, content);
+			}
+            else
+				fs.appendFileSync(filepath, this.get_code());
             return true;
         }
     },
