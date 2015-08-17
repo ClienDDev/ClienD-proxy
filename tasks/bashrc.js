@@ -16,6 +16,7 @@ module.exports = {
         var full = "\n" +
             this.label_str + "\n" +
             "export http_proxy='" + str + "'\n" +
+            "export https_proxy='" + str + "'\n" +
             "export ftp_proxy='" + str + "'\n" +
             this.label_str + "\n";
             
