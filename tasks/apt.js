@@ -26,7 +26,8 @@ module.exports = {
     },
     remove: function(){
 		var filepath = this.get_path();
-        fs.unlinkSync(filepath);
+		if (fs.existsSync(filepath)) 
+			fs.unlinkSync(filepath);
 		return true;
     }
 }

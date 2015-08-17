@@ -1,5 +1,6 @@
 var fs = require('fs');
 var path = require('path');
+var wait = require('wait.for');
 
 module.exports = {
     label_str: '# ClienD proxy',
@@ -31,12 +32,7 @@ module.exports = {
             var filepath = this.get_path();
             
             if (!fs.existsSync(filepath)) {
-                if(!fs.writeFileSync(filepath, "")){
-					if(!fs.writeFileSync(filepath, "")){
-						console.error("Не удалось создать файл", filepath, '. Запустите скрипт с правами администратора');
-						return false;
-					}
-                }
+                fs.writeFileSync(filepath, "");
             }
             
             var content = fs.readFileSync(filepath).toString();
