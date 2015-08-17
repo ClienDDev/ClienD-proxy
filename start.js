@@ -7,7 +7,8 @@ var async = require('async');
 // задачи
 var tasks = {
     bashrc: require('./tasks/bashrc'),
-    chrome: require('./tasks/chrome')
+    chrome: require('./tasks/chrome'),
+    apt: require('./tasks/apt')
 }
 
 // загрузка конфигурации

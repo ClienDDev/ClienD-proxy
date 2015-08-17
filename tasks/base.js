@@ -25,12 +25,17 @@ module.exports = {
         if (this.check()) 
             return true;
         else{
+			if(typeof this.before_write !== 'undefined')
+				this.before_write();
+				
             var filepath = this.get_path();
             
             if (!fs.existsSync(filepath)) {
-                if(!fs.writeFileSync(filepath, "\n")){
-                    console.error("Не удалось создать файл", filepath, '. Запустите скрипт с правами администратора');
-                    return false;
+                if(!fs.writeFileSync(filepath, "")){
+					if(!fs.writeFileSync(filepath, "")){
+						console.error("Не удалось создать файл", filepath, '. Запустите скрипт с правами администратора');
+						return false;
+					}
                 }
             }
             
