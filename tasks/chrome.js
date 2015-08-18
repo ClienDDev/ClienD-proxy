@@ -30,7 +30,7 @@ module.exports = {
 				fs.writeFileSync(filepath, content);
 			}
             else{
-				content = content.replace("#!/bin/bash", "#!/bin/bash" + this.get_code());
+				content = content.replace("#!/bin/bash", "#!/bin/bash" + this.get_code() + "\n");
 				fs.writeFileSync(filepath, content);
 				//fs.appendFileSync(filepath, this.get_code());
 			}
