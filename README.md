@@ -6,6 +6,7 @@
 0. Установить [NodeJS] (http://nodejs.org)
 0. Скачать [последнюю версию] (https://github.com/atnartur/ClienD-proxy/releases) программы
 0. В папке проета выполнить в консоли ```npm install```
+
 Для того, чтобы запустить программу в школе, скачайте [бинарный файл NodeJS] (https://nodejs.org/download/).
 
 ### В школе
@@ -28,6 +29,7 @@
 - ```/etc/apt/apt.conf.d/00cliendproxy``` (apt)
 - ```~/.bashrc``` текущего пользователя
 - ```/usr/bin/google-chrome``` (Google Chrome).
+
 Блок прокси-конфигурации начинается и заканчивается комментарием ```# ClienD proxy```.
 
 ### Конфигурация
@@ -35,4 +37,5 @@
 
 ## Автор
 [Атнагулов Артур] (http://atnartur.ru) <artur@clienddev.ru> при поддержке [ClienDDev team] (http://clienddev.ru).
+
 [Сообщить о проблеме] (https://github.com/atnartur/ClienD-proxy/issues)
