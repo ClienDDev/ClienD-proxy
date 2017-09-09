@@ -36,6 +36,6 @@
 Параметры прокси сервера указываются в файле config.json.
 
 ## Автор
-Оригинальный код написан [Атнагуловым Артуром] (http://atnartur.ru) <artur@clienddev.ru> при поддержке [ClienDDev team] (http://clienddev.ru) под лицензией MIT.
+Оригинальный код написан [Атнагуловым Артуром](http://atnartur.ru) <artur@clienddev.ru> при поддержке [ClienDDev team](http://clienddev.ru) под лицензией MIT.
 
-[Сообщить о проблеме] (https://github.com/atnartur/ClienD-proxy/issues)
+[Сообщить о проблеме](https://github.com/atnartur/ClienD-proxy/issues)
