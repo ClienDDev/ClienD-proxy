@@ -3,11 +3,11 @@
 
 ## Установка и запуск
 ### Дома (или в месте с нормальным интернетом)
-0. Установить [NodeJS] (http://nodejs.org)
-0. Скачать [последнюю версию] (https://github.com/atnartur/ClienD-proxy/releases) программы
+0. Установить [NodeJS](http://nodejs.org)
+0. Скачать [последнюю версию](https://github.com/atnartur/ClienD-proxy/releases) программы
 0. В папке проекта выполнить в консоли ```npm install```
 
-Для того, чтобы запустить программу в школе, скачайте [бинарный файл NodeJS] (https://nodejs.org/download/).
+Для того, чтобы запустить программу в школе, скачайте [бинарный файл NodeJS](https://nodejs.org/download/).
 
 ### В школе
 0. Выполнить ```sudo nodejs start```
